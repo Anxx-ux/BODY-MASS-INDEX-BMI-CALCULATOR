@@ -11,25 +11,25 @@ def calculate_bmi():
         bmi = weight / (height ** 2)
 
         if bmi < 18.5:
-            result = "🌸 BMI: {:.2f}\nYou are Underweight!".format(bmi)
+            result = "🌻 BMI: {:.2f}\nYou are Underweight!".format(bmi)
         elif bmi < 24.9:
-            result = "🌿 BMI: {:.2f}\nYou are Normal weight!".format(bmi)
+            result = "🌼 BMI: {:.2f}\nYou are Normal weight!".format(bmi)
         elif bmi < 29.9:
-            result = "🍩 BMI: {:.2f}\nYou are Overweight!".format(bmi)
+            result = "🌷 BMI: {:.2f}\nYou are Overweight!".format(bmi)
         else:
-            result = "❤️ BMI: {:.2f}\nYou are Obese!".format(bmi)
+            result = "🌹 BMI: {:.2f}\nYou are Obese!".format(bmi)
 
-        messagebox.showinfo("Your Result 🐻", result)
+        messagebox.showinfo("Your Result (～￣▽￣)～", result)
     except ValueError:
-        messagebox.showerror("Error 🚨", "Please enter valid numbers!")
+        messagebox.showerror("Error /(ㄒoㄒ)/~~", "Please enter valid numbers!")
 
 # Main window
 root = tk.Tk()
-root.title("Cute BMI Calculator 🐻🍓")
+root.title("Cute BMI Calculator 🍓")
 root.geometry("300x250")
 root.config(bg="lightpink")
 
-label_title = tk.Label(root, text="🐻 Cute BMI Calculator 🍓", font=("Arial", 14, "bold"), bg="lightpink")
+label_title = tk.Label(root, text="Cute BMI Calculator 🍓", font=("Arial", 14, "bold"), bg="lightpink")
 label_title.pack(pady=10)
 
 label_weight = tk.Label(root, text="Enter weight (kg):", bg="lightpink")
