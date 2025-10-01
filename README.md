@@ -29,7 +29,7 @@ root.title("Cute BMI Calculator 🍓")
 root.geometry("300x250")
 root.config(bg="lightpink")
 
-label_title = tk.Label(root, text="Cute BMI Calculator 🍓", font=("Arial", 14, "bold"), bg="lightpink")
+label_title = tk.Label(root, text="Cute BMI Calculator 🍓", font=("Arial", 20 , "bold"), bg="lightpink")
 label_title.pack(pady=10)
 
 label_weight = tk.Label(root, text="Enter weight (kg):", bg="lightpink")
